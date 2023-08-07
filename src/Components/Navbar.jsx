@@ -1,4 +1,4 @@
-import Logo2 from './../Utilities/Logo2.png'
+import Logo2 from './../Utilities/Images/Logo2.png'
 
 function Navbar() {
   return(

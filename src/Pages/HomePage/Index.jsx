@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import Navbar from "../../Components/Navbar"
+import Footer from "../../Components/Footer"
 
 function Home () {
     return(
@@ -12,6 +13,9 @@ function Home () {
                     Go to profile page
                 </span>
             </Link>
+            <h1>
+                <Footer></Footer>
+            </h1>
         </>
     )
 }
