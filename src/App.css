@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: josh;
+  src: url(../src/Utilities/Font/JOST-VARIABLEFONT_WGHT.TTF);
+}
+.josh {
+  font-family: josh;
+}
+
+
+/* Ini untuk font */
+@font-face {
+  font-family: geometr;
+  src: url(../src/Utilities/Font/TT0524M_.TTF);
+}
+.geometr {
+  font-family: geometr;
+}
