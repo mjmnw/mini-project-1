@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom"
+import Navbar from "../../Components/Navbar"
 
 function Home () {
     return(
         <>
             <h1>
-                Testttt
+                <Navbar></Navbar>
             </h1>
             <Link to='/profile'>
                 <span>
