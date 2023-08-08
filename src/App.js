@@ -2,8 +2,8 @@ import './App.css';
 
 import {Routes, Route} from 'react-router-dom';
 import Home from './Pages/HomePage/Index';
-import Login from './Components/Login';
 import LoginPage from './Pages/LoginPage/Index';
+import RegisterPage from './Pages/RegisterPage/Index';
 
 
 // import axios from 'axios';
@@ -19,6 +19,7 @@ function App() {
     <Routes>
     <Route path='/home' element={<Home />} />
     <Route path='/loginpage' element={<LoginPage />} />
+    <Route path='/registerpage' element={<RegisterPage />} />
     </Routes>
     </>
   );
