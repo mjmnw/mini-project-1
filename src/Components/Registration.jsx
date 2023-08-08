@@ -1,5 +1,4 @@
 
-
 function Registration () {
     return (
         <>
@@ -25,6 +24,12 @@ function Registration () {
             <button>
               Register
             </button>
+            <div>
+            View your order history in one place
+            Download tickets or edit attendee information
+            View streams you have bought tickets to
+            Automatically fill user information when checking out
+            </div>
           </div>
         </div>
         </>
