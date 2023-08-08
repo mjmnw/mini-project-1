@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Logo2 from './../Utilities/Images/Logo2.png'
 
 function Navbar() {
@@ -19,7 +20,7 @@ function Navbar() {
             <li><a href="#">SEARCH</a></li>
             <li className="pl-3 pr-10">
               <div className='flex items-center  bg-red-600 rounded-lg w-[80px] h-[32px]'>
-                <a href="#" className='pl-2 text-xl'>LOGIN</a>
+                <Link  to = {"/loginpage"} className='pl-2 text-xl'>LOGIN</Link>
               </div>
             </li>
           </ul>
