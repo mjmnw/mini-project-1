@@ -1,36 +1,16 @@
-import Navbar from "../../Components/Navbar";
-import Footer from "../../Components/Footer";
+import Login from "../../Components/Login";
+import Navbar from "../../Components/Navbar"
+import Footer from "../../Components/Footer"
 
-
-function LoginPage () {
+function LoginPage() {
     return (
         <>
-        <h1>
-            <Navbar/>
-        <div className=" h-screen w-[700px] mx-auto pb-[500] font-bold">
-              <h1>
-                Customer
-            </h1>
-            <div className= "flex flex-col items-center justify-center border-2 border-black h-[400px]" >
-            <div className="text-red-600 border-2 border-black w-[500px] h-12">
-                <h1>
-                    Email
-                </h1>
-            </div>
-            <div className="text-red-600 border-2 border-black w-[500px] h-12">
-                <h1>
-                    Password
-                </h1>
-            </div>
-            <div className="text-red-600 border-2 border-black w-[500px] h-12">
-                Submit
-            </div>
-            
-        </div>
+        <Navbar/>
+        <div className='grid grid-cols-2 mt-24 px-32'>
+            <Login/>
         </div>
         <Footer/>
-       </h1>
-       </>
+        </>
     )
 }
 
