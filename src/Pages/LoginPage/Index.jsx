@@ -1,8 +1,12 @@
-
+import Navbar from "../../Components/Navbar";
+import Footer from "../../Components/Footer";
 
 
 function LoginPage () {
     return (
+        <>
+        <h1>
+            <Navbar/>
         <div className=" h-screen w-[700px] mx-auto pb-[500] font-bold">
               <h1>
                 Customer
@@ -19,13 +23,14 @@ function LoginPage () {
                 </h1>
             </div>
             <div className="text-red-600 border-2 border-black w-[500px] h-12">
-                <h1>
-                    Login
-                </h1>
+                Submit
             </div>
+            
         </div>
         </div>
-       
+        <Footer/>
+       </h1>
+       </>
     )
 }
 
