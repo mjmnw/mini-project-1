@@ -6,8 +6,8 @@ export default function TnC () {
         <>
         <div className="bg-black">
         <Navbar />
-        <div className="px-[500px] pb-10">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6RBjSr7g_gk4nmI0ofH8lk2rHxKRAx6zerQ&usqp=CAU"/>
+        <div className="px-[200px] ml-20 pb-20">
+            <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cm9jayUyMGZlc3RpdmFsfGVufDB8fDB8fHww&w=1000&q=80"/>
         </div>
         <div className="text-5xl text-center text-white pt-3 pb-3">
         Terms & Conditions
