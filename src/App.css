@@ -54,3 +54,20 @@
 .geometr {
   font-family: geometr;
 }
+
+@font-face {
+  font-family: montserratMedium;
+  src: url(../src/Utilities/Font/MontserratMedium-lgZ6e.otf);
+}
+.montserratmedium {
+  font-family: montserratMedium;
+}
+
+
+@font-face {
+  font-family: montserratBold;
+  src: url(../src/Utilities/Font/MontserratBold-p781R.otf);
+}
+.montserratbold {
+  font-family: montserratBold;
+}
