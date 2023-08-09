@@ -11,7 +11,7 @@ import TnC from './Pages/TermsAndConditionsPage/Index';
 import AboutUsPage from './Pages/AboutUsPage/Index';
 import MyTicket from './Pages/MyTicketPage/Index';
 
-import axios from 'axios';
+// import axios from 'axios';
 // import toast from 'react-hot-toast';
 
 // import { useNavigate } from "react-router-dom";
