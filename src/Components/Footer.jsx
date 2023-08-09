@@ -5,7 +5,7 @@ import Logo2 from './../Utilities/Images/Logo2.png'
 function Footer () {
     return(
     <>
-    <footer className='flex flex-col bg-black text-white h-[250px] border'>
+    <footer className='flex flex-col bg-black text-white h-[250px]'>
         <div className='flex justify-center'>
         <a href="#" className="w-[300px] pt-3"><img src={Logo2} alt='Logo2'/></a>
         </div>
@@ -24,7 +24,7 @@ function Footer () {
             </ul>
         </div>
         <div>
-            <ul className='flex justify-center'>
+            <ul className='flex justify-center pb-3'>
                 <li>
                     <a className='hover:text-red-600'href='#'>
                     Instagram
@@ -42,6 +42,9 @@ function Footer () {
                 </li>
             </ul>
         </div>
+        <p className='flex flex-col text-center pt-1 text-xs'>
+        © 2023. JCWD-2502 PWDK. Death Parade Festival. All Rights Reserved.
+        </p>
     </footer>
     </>
     )

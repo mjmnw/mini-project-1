@@ -1,9 +1,8 @@
 import Navbar from "../../Components/Navbar"
 import Footer from "../../Components/Footer"
 import Mypage from "../../Components/Mypage"
-import TableAccount from "../../Components/TableAccount"
 
-function MyAccount () {
+function MyTicket () {
     return(
         <>
         <div className="bg-black text-white h-screen">
@@ -12,13 +11,12 @@ function MyAccount () {
         </div>
         <Mypage />
         <h1 className="flex justify-center text-4xl pb-10">
-            Account Information
+            My Ticket
         </h1>
-        <TableAccount />
         <Footer />
         </div>
         </>
     )
 }
 
-export default MyAccount
+export default MyTicket
