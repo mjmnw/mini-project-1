@@ -4,9 +4,12 @@ import {Routes, Route} from 'react-router-dom';
 import Home from './Pages/HomePage/Index';
 import LoginPage from './Pages/LoginPage/Index';
 import RegisterPage from './Pages/RegisterPage/Index';
+import Merchandise from './Pages/MerchandisePage/Index'
+import MyAccount from './Pages/MyAccountPage/Index';
+import Transaction from './Pages/TransactionPage/Index';
+import TnC from './Pages/TermsAndConditionsPage/Index';
 
-
-// import axios from 'axios';
+import axios from 'axios';
 // import toast from 'react-hot-toast';
 
 // import { useNavigate } from "react-router-dom";
@@ -17,9 +20,13 @@ function App() {
   return (
     <>
     <Routes>
-    <Route path='/home' element={<Home />} />
-    <Route path='/loginpage' element={<LoginPage />} />
-    <Route path='/registerpage' element={<RegisterPage />} />
+    <Route path='/' element={<Home />} />
+    <Route path='/login' element={<LoginPage />} />
+    <Route path='/register' element={<RegisterPage />} />
+    <Route path='/merchandise' element={<Merchandise />} />
+    <Route path='/myaccount' element={<MyAccount />} />
+    <Route path='/transaction' element={<Transaction />} />
+    <Route path='/termsandconditions' element={<TnC />} />
     </Routes>
     </>
   );
