@@ -29,7 +29,7 @@ function Login () {
             </button>
             <div>
                 New User? 
-                <Link  to = {"/registerpage"} className='pl-2 text-xl'>SignUp</Link>
+                <Link  to = {"/register"} className='pl-2 text-xl'>SignUp</Link>
             </div>
           </div>
         </div>

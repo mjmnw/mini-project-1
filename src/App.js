@@ -8,6 +8,7 @@ import Merchandise from './Pages/MerchandisePage/Index'
 import MyAccount from './Pages/MyAccountPage/Index';
 import Transaction from './Pages/TransactionPage/Index';
 import TnC from './Pages/TermsAndConditionsPage/Index';
+import AboutUsPage from './Pages/AboutUsPage/Index';
 
 import axios from 'axios';
 // import toast from 'react-hot-toast';
@@ -27,6 +28,7 @@ function App() {
     <Route path='/myaccount' element={<MyAccount />} />
     <Route path='/transaction' element={<Transaction />} />
     <Route path='/termsandconditions' element={<TnC />} />
+    <Route path='/aboutus' element={<AboutUsPage />} />
     </Routes>
     </>
   );
