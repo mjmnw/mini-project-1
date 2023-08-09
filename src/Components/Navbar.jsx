@@ -12,7 +12,10 @@ function Navbar() {
           <ul className="flex">
             <li className="hover:text-red-600"><a href="# ">EVENT</a></li>
             <li className="pl-9 hover:text-red-600"><a href="#">MERCH</a></li>
-            <li className="pl-9 hover:text-red-600"><a href="#">ABOUT US</a></li>
+            <li className="pl-9 hover:text-red-600"><Link to = {"/aboutuspage"} >ABOUT US</Link>
+
+            </li>
+            
           </ul>
         </div>
         <div>
