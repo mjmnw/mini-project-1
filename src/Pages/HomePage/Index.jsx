@@ -15,6 +15,7 @@ function Home () {
 
             </Link>
             <h1>
+            
                 <Footer></Footer>
             </h1>
            </main>
