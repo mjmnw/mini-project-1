@@ -4,6 +4,7 @@ import {Routes, Route} from 'react-router-dom';
 import Home from './Pages/HomePage/Index';
 import LoginPage from './Pages/LoginPage/Index';
 import RegisterPage from './Pages/RegisterPage/Index';
+import AboutUsPage from './Pages/AboutUsPage/Index';
 
 
 // import axios from 'axios';
@@ -20,6 +21,7 @@ function App() {
     <Route path='/home' element={<Home />} />
     <Route path='/loginpage' element={<LoginPage />} />
     <Route path='/registerpage' element={<RegisterPage />} />
+    <Route path='/aboutuspage' element={<AboutUsPage />} />
     </Routes>
     </>
   );
