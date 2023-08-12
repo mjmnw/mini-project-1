@@ -27,6 +27,7 @@ import Login2 from "./Components/Login2";
 function App() {
   return (
     <Provider store={store}>
+      <BrowserRouter>
       <KeepLogin>
         <div className="App">
           <Routes>
@@ -42,9 +43,10 @@ function App() {
             <Route path="/register2" element={<Register />} />
             <Route path="/login2" element={<Login2 />} />
             <Route path="/*" element={<NotFound />} />
-          </Routes>
+            </Routes>
         </div>
         </KeepLogin>
+        </BrowserRouter>
     </Provider>
   );
 }

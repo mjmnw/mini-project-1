@@ -38,7 +38,7 @@ const Register = () => {
           points: 0,
           user_type: "user",
         });
-        navigate("/login");
+        navigate("/login2");
       } catch (error) {
         console.log(error);
       }

@@ -62,7 +62,7 @@ const Login2 = () => {
             onChange={formik.handleChange}
           />
         <a style={{ fontSize: 12, alignSelf: "flex-end" }} onClick={() => setPasswordShown(!passwordShown)}>
-
+            Show Password
           </a>
           <p style={{ margin: 0, color: "red" }}>{formik.errors.password}</p>
   
