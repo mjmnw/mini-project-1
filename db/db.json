@@ -1,44 +1,157 @@
 {
-    "merchandise": [
+    "user": [
         {
-            "name": "Botol1",
-            "images": ["https://erigostore.co.id/cdn/shop/products/T-Shirt-Oversize-Fresne-Andora-1-1.jpg?v=1666231535",
-            "https://erigostore.co.id/cdn/shop/products/T-Shirt-Oversize-Fresne-Andora-5.jpg?v=1666231542"],
-            "price": 300,
-            "stocks": 10000,
-            "typeId": 1,
-            "id": 1
+            "id": 1,
+            "user_uniqueid": 1,
+            "user_type": "admin",
+            "full_name": "Martin Joman",
+            "email": "martin@gmail.com",
+            "phone_number": "081212345678",
+            "refferal_code": "ABC123",
+            "points": 0,
+            "password": "Martin123"
         },
         {
-            "name": "Botol2",
-            "images": ["https://erigostore.co.id/cdn/shop/products/T-Shirt-Oversize-Fresne-Andora-1-1.jpg?v=1666231535",
-            "https://erigostore.co.id/cdn/shop/products/T-Shirt-Oversize-Fresne-Andora-5.jpg?v=1666231542"],
-            "price": 300,
-            "stocks": 10000,
-            "typeId": 1,
-            "id": 2
+            "id": 2,
+            "user_uniqueid": 2,
+            "user_type": "admin",
+            "full_name": "Syahrin Matlail",
+            "email": "syahrin@gmail.com",
+            "phone_number": "081212345679",
+            "refferal_code": "BCA321",
+            "points": 0,
+            "password": "Syahrin123"
         },
         {
-            "name": "Botol3",
-            "images": ["https://erigostore.co.id/cdn/shop/products/T-Shirt-Oversize-Fresne-Andora-1-1.jpg?v=1666231535",
-            "https://erigostore.co.id/cdn/shop/products/T-Shirt-Oversize-Fresne-Andora-5.jpg?v=1666231542"],
-            "price": 300,
-            "stocks": 10000,
-            "typeId": 1,
-            "id": 3
+            "id": 3,
+            "user_uniqueid": 3,
+            "user_type": "admin",
+            "full_name": "Arya Bintang",
+            "email": "arya@gmail.com",
+            "phone_number": "081212345677",
+            "refferal_code": "CAB213",
+            "points": 0,
+            "password": "Arya1234"
         }
     ],
 
-    "tickets":[
+    "ticketType": [
         {
-            "userId": 1,
-            "ticketType": 1,
-            "ticketAmount": 1
+            "id": 1,
+            "ticket_uniqueid": 1,
+            "ticket_name": "Ticket A",
+            "ticket_image": [""],
+            "ticket_date": "07-07-2023",
+            "ticket_location": "Ancol",
+            "ticket_price": 20000
         },
         {
-            "userId": 1,
-            "ticketType": 2,
-            "ticketAmount": 2            
+            "id": 2,
+            "ticket_uniqueid": 2,
+            "ticket_name": "Ticket B",
+            "ticket_image": [""],
+            "ticket_date": "10-10-2023",
+            "ticket_location": "BSD",
+            "ticket_price": 50000
+        },
+        {
+            "id": 3,
+            "ticket_uniqueid": 3,
+            "ticket_name": "Ticket C",
+            "ticket_image": [""],
+            "ticket_date": "10-12-2023",
+            "ticket_location": "Jakarta",
+            "ticket_price": 50000
+        }
+    ],
+
+    "ticketOwn": [
+        {
+            "id": 1,
+            "user_uniqueid": 1,
+            "ticket_uniqueid": 1,
+            "ticket_own_amount": 1
+        },
+        {
+            "id": 2,
+            "user_uniqueid": 2,
+            "ticket_uniqueid": 1,
+            "ticket_own_amount": 1
+        },
+        {
+            "id": 3,
+            "user_uniqueid": 3,
+            "ticket_uniqueid": 2,
+            "ticket_own_amount": 1
+        },
+        {
+            "id": 4,
+            "user_uniqueid": 3,
+            "ticket_uniqueid": 1,
+            "ticket_own_amount": 1
+        }
+    ],
+
+    "ticketPurchaseHistory": [
+        {
+            "id": 1,
+            "user_uniqueid": 1,
+            "ticket_uniqueid": 1,
+            "ticket_purchase_amount": 1
+        },
+        {
+            "id": 2,
+            "user_uniqueid": 1,
+            "ticket_uniqueid": 2,
+            "ticket_purchase_amount": 2
+        },
+        {
+            "id": 3,
+            "user_uniqueid": 2,
+            "ticket_uniqueid": 3,
+            "ticket_purchase_amount": 1
+        },
+        {
+            "id": 4,
+            "user_uniqueid": 1,
+            "ticket_uniqueid": 1,
+            "ticket_purchase_amount": 1
+        }
+    ],
+
+    "merchandiseType": [
+        {
+            "id": 1,
+            "merchandise_uniqueid": 1,
+            "merchandise_name": "Botol A",
+            "merchandise_image": [""]
+        },
+        {
+            "id": 2,
+            "merchandise_uniqueid": 2,
+            "merchandise_name": "Botol B",
+            "merchandise_image": [""]
+        },
+        {
+            "id": 3,
+            "merchandise_uniqueid": 3,
+            "merchandise_name": "Botol C",
+            "merchandise_image": [""]
+        }
+    ],
+
+    "merchandisePurchaseHistory": [
+        {
+            "id": 1,
+            "user_uniqueid": 1,
+            "merchandise_uniqueid": 2,
+            "merchandise_purchase_amount": 1
+        },
+        {
+            "id": 2,
+            "user_uniqueid": 1,
+            "merchandise_uniqueid": 1,
+            "merchandise_purchase_amount": 1
         }
     ]
-  }
+}

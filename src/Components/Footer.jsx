@@ -12,12 +12,12 @@ function Footer () {
         <div>
             <ul className='flex justify-center pb-3 pt-3'>
                 <li>
-                    <a className='hover:text-red-600'href='#'>
+                    <a className='hover:text-red-600'href='http://localhost:3000/termsandconditions'>
                     T&C
                     </a>
                 </li>
                 <li className='pl-20'>
-                    <a className='hover:text-red-600'href='#'>
+                    <a className='hover:text-red-600'href='http://localhost:3000/aboutus'>
                     About Us
                     </a>
                 </li>
@@ -26,17 +26,17 @@ function Footer () {
         <div>
             <ul className='flex justify-center pb-3'>
                 <li>
-                    <a className='hover:text-red-600'href='#'>
+                    <a className='hover:text-red-600'href='https://www.instagram.com/'>
                     Instagram
                     </a>
                 </li>
                 <li className='pl-8'>
-                    <a className='hover:text-red-600'href='#'>
+                    <a className='hover:text-red-600'href='https://www.facebook.com/'>
                     Facebook
                     </a>
                 </li>
                 <li className='pl-8'>
-                    <a className='hover:text-red-600'href='#'>
+                    <a className='hover:text-red-600'href='https://www.youtube.com/'>
                     Youtube
                     </a>
                 </li>
