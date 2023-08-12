@@ -11,6 +11,7 @@ import TnC from './Pages/TermsAndConditionsPage/Index';
 import AboutUsPage from './Pages/AboutUsPage/Index';
 import MyTicket from './Pages/MyTicketPage/Index';
 import NotFound from './Pages/PageNotFound/Index';
+import ListEvent  from './Pages/ListEventPage/Index';
 
 // import axios from 'axios';
 // import toast from 'react-hot-toast';
@@ -33,6 +34,7 @@ function App() {
     <Route path='/aboutus' element={<AboutUsPage />} />
     <Route path='/myticket' element={<MyTicket />} />
     <Route path='/*' element={<NotFound />} />
+    <Route path='/listevent' element={<ListEvent/>} />
     </Routes>
     </>
   );
