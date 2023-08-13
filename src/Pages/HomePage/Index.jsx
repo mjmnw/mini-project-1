@@ -1,4 +1,3 @@
-// import { Link } from "react-router-dom";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
 import { useEffect, useState } from "react";
@@ -9,6 +8,7 @@ function Home() {
   const [products, setProducts] = useState([]);
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("");
+  const [searchTicket, setSearchTicket] = useState("");
 
   const fetchAllProducts = async () => {
     try {
@@ -21,11 +21,29 @@ function Home() {
 
   const fetchProductList = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/event", {
-        params: {
-          ticket_category: selectedCategory,
-        },
-      });
+      let config = {};
+
+      if (selectedCategory && searchTicket) {
+        config = {
+          params: {
+            ticket_category: selectedCategory,
+            ticket_name: searchTicket,
+          },
+        };
+      } else if (selectedCategory !== "" && !searchTicket) {
+        config = {
+          params: {
+            ticket_category: selectedCategory,
+          },
+        };
+      } else if (searchTicket !== "" && !selectedCategory) {
+        config = {
+          params: {
+            ticket_name: searchTicket,
+          },
+        };
+      }
+      const res = await axios.get("http://localhost:5000/event", config);
       setProducts(res.data);
     } catch (error) {
       console.log(error);
@@ -41,13 +59,21 @@ function Home() {
     }
   };
 
+  const searchHandler = (props) => {
+    setSearchTicket(props);
+  };
+
+  // useEffect(() => {
+  //   if (selectedCategory || searchTicket) {
+  //     fetchProductList();
+  //   } else {
+  //     fetchAllProducts();
+  //   }
+  // }, [selectedCategory, searchTicket]);
+
   useEffect(() => {
-    if (selectedCategory) {
-      fetchProductList();
-    } else {
-      fetchAllProducts();
-    }
-  }, [selectedCategory]);
+    fetchProductList();
+  }, [searchTicket, selectedCategory]);
 
   useEffect(() => {
     fetchCategories();
@@ -56,15 +82,17 @@ function Home() {
   return (
     <>
       <main>
-        <Navbar />
+        <Navbar searchHandler={searchHandler} />
         <div
           style={{
             display: "flex",
             backgroundColor: "black",
-            gap: 10,
-            justifyContent: "center",
-            paddingTop: 5,
+            gap: 40,
+            paddingLeft: 75,
+            justifyContent: "start",
+            paddingTop: 20,
             color: "white",
+            fontSize: 20,
           }}
         >
           <a
@@ -78,7 +106,9 @@ function Home() {
               return (
                 <a
                   key={ticket_category.id}
-                  onClick={() => setSelectedCategory(ticket_category.ticket_category)}
+                  onClick={() =>
+                    setSelectedCategory(ticket_category.ticket_category)
+                  }
                   style={{ cursor: "pointer" }}
                 >
                   {ticket_category.ticket_category}

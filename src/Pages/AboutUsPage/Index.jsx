@@ -11,13 +11,13 @@ function AboutUsPage () {
             <img src="https://www.revolvermag.com/sites/default/files/styles/banner/public/media/images/article/gary-holt-by-jimmyhubbard-077a6947-web-crop.jpg?itok=eRTjYmw0&timestamp=1629826020" />
         <div className="justify-center px-[500px] ">
         </div>
-        <div className=" h-2 w-[350px] pt-60 pl-7 pb-0 ">    
-            <img src="https://killtownbookings.com/wp-content/uploads/component_killtown-deathfest.jpg"/>
+        <div className=" h-2 w-[350px] pt-60 pl-7 pb-0">    
+            <img src="https://killtownbookings.com/wp-content/uploads/component_killtown-deathfest.jpg" className="mt-12"/>
             </div>
             <div className="text-white font-bold justify-center flex pl-52 pb-10">
                 ABOUT US
             </div>
-        <div className=" text-sm  ml-[400px] text-white pr-12 pb-10 ">
+        <div className=" text-sm  ml-[400px] text-white pr-12 pb-10 text-justify">
         The Death Parade Festival began in 2019 where three young people from one campus had a dream of creating a campus-community 
         based music platform that would be acceptable to the public and death metal music lovers. With only 
         passion and passion, they started to initiate small gigs and change the event medium locally. Over time, 

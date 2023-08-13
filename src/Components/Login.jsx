@@ -80,7 +80,12 @@ const Login = () => {
               Show Password
             </a>
             <p className="">{formik.errors.password}</p>
-
+            <a className="flex flex-row gap-1 text-xs justify-end mt-2">
+            Don't have an account?
+            <a className="flex justify-end text-xs cursor-pointer text-sky-500" href="/register">
+              Sign Up
+            </a>
+            </a>
             <button className="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 mt-5" type="submit">
               Login
             </button>

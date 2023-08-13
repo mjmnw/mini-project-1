@@ -7,7 +7,7 @@ function Footer () {
     <>
     <footer className='flex flex-col bg-black text-white h-[250px]'>
         <div className='flex justify-center'>
-        <a href="#" className="w-[300px] pt-3"><img src={Logo2} alt='Logo2'/></a>
+        <a className="w-[300px] pt-3"><img src={Logo2} alt='Logo2'/></a>
         </div>
         <div>
             <ul className='flex justify-center pb-3 pt-3'>
