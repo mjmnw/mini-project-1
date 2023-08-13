@@ -1,42 +1,109 @@
 // import { Link } from 'react-router-dom';
-import Logo2 from './../Utilities/Images/Logo2.png'
-import { TbMoodSearch } from "react-icons/tb"
+import { useDispatch, useSelector } from "react-redux";
+import Logo2 from "./../Utilities/Images/Logo2.png";
+import { TbMoodSearch } from "react-icons/tb";
+import { logout } from "../Redux/Reducer/Auth";
+import { useNavigate } from "react-router-dom";
+import { MdFace } from "react-icons/md";
 
 function Navbar() {
-  return(
+  const userSelector = useSelector((state) => state.auth);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const logoutHandler = () => {
+    dispatch(logout());
+    localStorage.removeItem("user");
+    navigate("/login");
+  };
+
+  return (
     <>
       <nav className="flex h-[80px] bg-black  justify-between items-center text-white text-xl montserratbold ">
-        
         <div className="flex pl-10 w-[400px]">
-          <a href="http://localhost:3000" className="w-[150px]"><img src={Logo2} alt='Logo2'/></a>
+          <a href="http://localhost:3000" className="w-[150px]">
+            <img src={Logo2} alt="Logo2" />
+          </a>
         </div>
 
         <div>
           <label className="relative block">
             <span className="absolute inset-y-0 left-0 flex items-center pl-2">
-              <TbMoodSearch className='text-neutral-700'/>
+              <TbMoodSearch className="text-neutral-700" />
             </span>
-            <input className="placeholder:italic placeholder:text-neutral-700 block bg-neutral-900 w-[500px] rounded-md  py-2 pl-11 pr-3 shadow-sm focus:outline-none focus:border-neutral-950 focus:ring-neutral-950 focus:ring-1 sm:text-sm" placeholder="Search event . . ." type="text" name="search"/>
+            <input
+              className="placeholder:italic placeholder:text-neutral-700 block bg-neutral-900 w-[500px] rounded-md  py-2 pl-11 pr-3 shadow-sm focus:outline-none focus:border-neutral-950 focus:ring-neutral-950 focus:ring-1 sm:text-sm"
+              placeholder="Search event . . ."
+              type="text"
+              name="search"
+            />
           </label>
         </div>
-        
-        <div className='pr-10 flex text-base w-[400px]'>
-          <div className='pr-5 flex text-base'>
-            <span className="hover:text-red-600"><a href="http://localhost:3000/event" className='align-middle'>EVENT</a></span>
-            <span className="pl-2 hover:text-red-600"><a href="http://localhost:3000/merchandise" className='align-middle'>MERCH</a></span>
-            <span className="pl-2 hover:text-red-600"><a href="http://localhost:3000/aboutus" className='align-middle'>ABOUT US</a></span>
+
+        <div
+          className="pr-10 flex text-base w-[400px]"
+          style={{
+            alignItems: "center",
+          }}
+        >
+          <div className="pr-5 flex text-base">
+            <span className="hover:text-red-600">
+              <a href="http://localhost:3000/event" className="align-middle">
+                EVENT
+              </a>
+            </span>
+            <span className="pl-2 hover:text-red-600">
+              <a
+                href="http://localhost:3000/merchandise"
+                className="align-middle"
+              >
+                MERCH
+              </a>
+            </span>
+            <span className="pl-2 hover:text-red-600">
+              <a href="http://localhost:3000/aboutus" className="align-middle">
+                ABOUT US
+              </a>
+            </span>
           </div>
-          <div className='flex rounded-lg w-[80px] h-[30px]  bg-neutral-900 hover:bg-neutral-800 text-white '>
-            <a href='http://localhost:3000/login' className='flex justify-center items-center w-full h-full hover:text-red-600'>Log In</a>
+          {!!userSelector.id && (
+            <a
+              style={{
+                border: "1px solid white",
+                borderRadius: "50%",
+                display: "flex",
+                alignItems: "center",
+                height: 20,
+                width: 20,
+                justifyContent: "center",
+                marginRight: 17,
+                cursor: "pointer"
+              }}
+            onClick={()=> navigate("/myaccount")}>
+              <MdFace />
+            </a>
+          )}
+          <div className="flex rounded-lg w-[80px] h-[30px]  bg-neutral-900 hover:bg-neutral-800 text-white ">
+            {userSelector.id ? (
+              <button
+                className="flex justify-center items-center w-full h-full hover:text-red-600"
+                onClick={logoutHandler}
+              >
+                Logout
+              </button>
+            ) : (
+              <button
+                className="flex justify-center items-center w-full h-full hover:text-red-600"
+                onClick={() => navigate("/login")}
+              >
+                Log In
+              </button>
+            )}
           </div>
         </div>
-        
-          
-          
-        
       </nav>
     </>
-  )
+  );
 }
 
 export default Navbar;

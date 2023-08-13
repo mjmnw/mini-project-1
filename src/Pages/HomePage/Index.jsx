@@ -1,26 +1,110 @@
-import { Link } from "react-router-dom"
-import Navbar from "../../Components/Navbar"
-import Footer from "../../Components/Footer"
-import Productcard from "../../Components/Productcard"
+// import { Link } from "react-router-dom";
+import Navbar from "../../Components/Navbar";
+import Footer from "../../Components/Footer";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import Productcard from "../../Components/Productcard";
 
-function Home () {
-    return(
-        <>
-           <main>
-                <h1>
-                <Navbar></Navbar>
-            </h1>
-          
-            <Link to='/profile'>
+function Home() {
+  const [products, setProducts] = useState([]);
+  const [categories, setCategories] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState("");
 
-            </Link>
-            <h1>
-            
-                <Footer></Footer>
-            </h1>
-           </main>
-        </>
-    )
+  const fetchAllProducts = async () => {
+    try {
+      const res = await axios.get("http://localhost:5000/event");
+      setProducts(res.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const fetchProductList = async () => {
+    try {
+      const res = await axios.get("http://localhost:5000/event", {
+        params: {
+          category: selectedCategory,
+        },
+      });
+      setProducts(res.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  console.log(products);
+
+  const fetchCategories = async () => {
+    try {
+      const res = await axios.get("http://localhost:5000/categories");
+      setCategories(res.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    if (selectedCategory) {
+      fetchProductList();
+    } else {
+      fetchAllProducts();
+    }
+  }, [selectedCategory]);
+
+  useEffect(() => {
+    fetchCategories();
+  }, []);
+
+  return (
+    <>
+      <main>
+        <Navbar />
+        <div
+          style={{
+            display: "flex",
+            backgroundColor: "black",
+            gap: 10,
+            justifyContent: "center",
+            paddingTop: 5,
+            color: "white",
+          }}
+        >
+          <a
+            onClick={() => setSelectedCategory("")}
+            style={{ cursor: "pointer" }}
+          >
+            All
+          </a>
+          {categories.length > 0 &&
+            categories.map((category) => {
+              return (
+                <a
+                  key={category.id}
+                  onClick={() => setSelectedCategory(category.category_name)}
+                  style={{ cursor: "pointer" }}
+                >
+                  {category.category_name}
+                </a>
+              );
+            })}
+        </div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            flexWrap: "wrap",
+            justifyContent: "space-evenly",
+            backgroundColor: "black",
+          }}
+        >
+          {products.length > 0 &&
+            products.map((product) => {
+              return <Productcard key={product.id} product={product} />;
+            })}
+        </div>
+        <Footer />
+      </main>
+    </>
+  );
 }
 
-export default Home
+export default Home;

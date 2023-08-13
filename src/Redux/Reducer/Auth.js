@@ -7,7 +7,7 @@ const initialState = {
   full_name: "",
   email: "",
   phone_number: "",
-  referral_code: "",
+  refferal_code: "",
   points: 0,
 };
 
@@ -22,7 +22,7 @@ const authReducer = createSlice({
       state.full_name = action.payload.full_name;
       state.email = action.payload.email;
       state.phone_number = action.payload.phone_number;
-      state.referral_code = action.payload.referral_code;
+      state.refferal_code = action.payload.refferal_code;
       state.points = action.payload.points;
     },
     logout: () => {
@@ -32,5 +32,6 @@ const authReducer = createSlice({
 });
 
 export const { login } = authReducer.actions;
+export const { logout } = authReducer.actions
 
 export default authReducer.reducer;

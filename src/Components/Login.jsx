@@ -1,41 +1,95 @@
-import { Link } from "react-router-dom";
+import { useFormik } from "formik";
+import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { login } from "../Redux/Reducer/Auth";
+import axios from "axios";
+import * as yup from "yup";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import { useEffect } from "react";
 
+const Login = () => {
+  const dispatch = useDispatch();
+  const [passwordShown, setPasswordShown] = useState(false);
+  const navigate = useNavigate();
+  const userSelector = useSelector((state) => state.auth)
 
-function Login () {
-    return (
-        <>
-        <div className="h-screen justify-center">
-          <div className="items-center flex flex-col pl-[500px]">
-          <div className='flex justify-center items-center bg-red-500 border w-[500px] h-10'>
-            <h1 className='text-xl font-bold text-white'>
-              CUSTOMER
-            </h1>
-          </div>
-          <div className='px-40 py-3'>
-            <h1 className='text-ms font-bold text-white pr-[300px]'> 
-             Email
-            </h1>
-            <input type='text'  placeholder='Email@gmail.com' className='border border-black w-[350px] h-10 mt-3 px-3 py-3 ' />
-          </div>
-          <div className='px-40 py-3'>
-            <h1 className='text-ms font-bold text-white pr-[280px]'> 
-             Password
-            </h1>
-            <input type='password'  placeholder='Password' className='border border-black w-[350px] h-10 mt-3 px-3 py-3 ' />
-          </div>
-          <div className='px-20 py-3' >
-            <button className="hover:bg-amber-400 text-white font-bold border border-white w-20 ">
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+      password: "",
+    },
+    validationSchema: yup.object().shape({
+      email: yup.string().email().required("Email is Required."),
+      password: yup.string().required("Password is Required."),
+    }),
+    onSubmit: async (values) => {
+      try {
+        const res = await axios.get("http://localhost:5000/user", {
+          params: {
+            email: values.email,
+            password: values.password,
+          },
+        });
+        localStorage.setItem("user", JSON.stringify(res.data[0]));
+        dispatch(login(res.data[0]));
+        navigate("/");
+      } catch (error) {
+        console.log(error);
+      }
+    },
+  });
+
+  useEffect(()=>{
+    if(userSelector.id) {
+      navigate('/')
+    }
+  },[userSelector.id])
+
+  return (
+    <div>
+      <Navbar />
+      <main className="flex h-screen items-center justify-center bg-black text-white">
+        <div className="bg-neutral-950 p-8 rounded shadow-md w-400 ">
+          <h2 className="text-2xl font-semibold mb-4 p-10">Login to Your Account</h2>
+          <form
+            className="flex-col gap-20 bg-neutral-900 p-8 rounded shadow-md w-150"
+            onSubmit={formik.handleSubmit}
+          >
+            <label className="block text-sm font-medium mb-4">Email</label>
+            <input
+              type="text"
+              className="mt-1 p-2 border w-full rounded text-black"
+              name="email"
+              onChange={formik.handleChange}
+            />
+            <p className="">{formik.errors.email}</p>
+
+            <p className="block text-sm font-medium mt-5">Password</p>
+            <input
+              type={passwordShown ? "text" : "password"}
+              className="mt-1 p-2 border w-full rounded text-black"
+              name="password"
+              onChange={formik.handleChange}
+            />
+            <a
+              className="flex justify-end text-xs mt-2 cursor-pointer"
+              onClick={() => setPasswordShown(!passwordShown)}
+            >
+              Show Password
+            </a>
+            <p className="">{formik.errors.password}</p>
+
+            <button className="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 mt-5" type="submit">
               Login
             </button>
-            <div className="pt-5 text-white">
-              New User? 
-                <Link  to = {"/register"} className=' text-ms text-white hover:bg-yellow-400 pl-2'>SignUp</Link>
-            </div>
-            </div>
-          </div>
+          </form>
         </div>
-        </>
-    )
-}
+        </main>
+        <Footer />
+        </div>
+  );
+};
 
 export default Login;
