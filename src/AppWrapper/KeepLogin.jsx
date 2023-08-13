@@ -17,6 +17,8 @@ const KeepLogin = ({ children }) => {
       dispatch(login(userData));
     } else if (!userData && location.pathname.includes("transaction-confirmation")) {
       navigate("/login");
+    } else if (!userData && location.pathname.includes("merchandise-confirmation")) {
+      navigate("/login");
     }
   };
 
