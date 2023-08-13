@@ -8,8 +8,8 @@
       "email": "martin@gmail.com",
       "phone_number": "081212345678",
       "refferal_code": "ABC123",
-      "points": 5000,
-      "balance": 999999,
+      "points": 10000000,
+      "balance": 10000000,
       "password": "Martin1231"
     },
     {
@@ -20,8 +20,8 @@
       "email": "syahrin@gmail.com",
       "phone_number": "081212345679",
       "refferal_code": "BCA321",
-      "points": 0,
-      "balance": 999999,
+      "points": 10000000,
+      "balance": 10000000,
       "password": "Syahrin123"
     },
     {
@@ -32,8 +32,8 @@
       "email": "arya@gmail.com",
       "phone_number": "081212345677",
       "refferal_code": "CAB213",
-      "points": 0,
-      "balance": 999999,
+      "points": 10000000,
+      "balance": 10000000,
       "password": "Arya1234"
     }
   ],
@@ -48,7 +48,7 @@
       "ticket_date": "07-07-2024",
       "ticket_location": "Serengeti National Park, Tanzania",
       "ticket_category": "Rock",
-      "ticket_stock": 4968,
+      "ticket_stock": 5000,
       "ticket_price": 20000
     },
     {
@@ -337,7 +337,7 @@
       ],
       "merchandise_stock": 29986,
       "merchandise_category": "Bottle",
-      "merchandise_price": 1
+      "merchandise_price": 25
     },
     {
       "id": 2,
@@ -348,7 +348,7 @@
       ],
       "merchandise_stock": 30000,
       "merchandise_category": "T-Shirt",
-      "merchandise_price": 100
+      "merchandise_price": 25
     },
     {
       "id": 3,
@@ -359,7 +359,7 @@
       ],
       "merchandise_stock": 30000,
       "merchandise_category": "Lanyard",
-      "merchandise_price": 1
+      "merchandise_price": 25
     }
   ],
   "merchandiseCategory": [
