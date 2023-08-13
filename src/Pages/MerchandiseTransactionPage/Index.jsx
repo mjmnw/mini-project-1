@@ -53,8 +53,6 @@ function MerchandiseTransactionDetail() {
     }
   };
 
-  console.log(userSelector);
-
   useEffect(() => {
     fetchProduct();
   }, []);

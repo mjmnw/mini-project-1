@@ -1,9 +1,8 @@
 import Navbar from "../../Components/Navbar"
 import Footer from "../../Components/Footer"
 import Mypage from "../../Components/Mypage"
-import Ticket from "../../Components/TableTicket"
 
-function MyTicket () {
+function MerchandiseHistory () {
     return(
         <>
         <div className="bg-black text-white h-screen">
@@ -11,9 +10,8 @@ function MyTicket () {
         <div className="pb-20 border-b">
         </div>
         <Mypage />
-        <Ticket />
         <h1 className="flex justify-center text-4xl pb-10">
-            My Ticket
+            Merchandise Transaction History
         </h1>
         <Footer />
         </div>
@@ -21,4 +19,4 @@ function MyTicket () {
     )
 }
 
-export default MyTicket
+export default MerchandiseHistory

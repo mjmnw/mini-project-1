@@ -4,18 +4,17 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/HomePage/Index";
 import Merchandise from "./Pages/MerchandisePage/Index";
 import MyAccount from "./Pages/MyAccountPage/Index";
-import TransactionDetail from "./Pages/TransactionPage/Index";
+import TransactionDetail from "./Pages/TicketTransactionPage/Index";
 import MerchandiseTransactionDetail from "./Pages/MerchandiseTransactionPage/Index";
 import TnC from "./Pages/TermsAndConditionsPage/Index";
 import AboutUsPage from "./Pages/AboutUsPage/Index";
-import MyTicket from "./Pages/MyTicketPage/Index";
 import NotFound from "./Pages/PageNotFound/Index";
 import { Provider } from "react-redux";
 import KeepLogin from "./AppWrapper/KeepLogin";
-import Register from "./Components/Register";
+import Register from "./Pages/RegisterPage/Index";
 import { store } from "./Redux/Store";
-import Login from "./Components/Login";
-import ListEvent from "./Pages/ListEventPage/Index";
+import Login from "./Pages/LoginPage/Index";
+import TransactionHistory from "./Pages/TransactionHistory/Index";
 
 
 // import axios from 'axios';
@@ -39,10 +38,9 @@ function App() {
             <Route path="/merchandise-confirmation/:productId" element={<MerchandiseTransactionDetail />} />
             <Route path="/termsandconditions" element={<TnC />} />
             <Route path="/aboutus" element={<AboutUsPage />} />
-            <Route path="/myticket" element={<MyTicket />} />
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/events" element={<ListEvent />} />
+            <Route path="/transactionhistory" element={<TransactionHistory />} />
             <Route path="/*" element={<NotFound />} />
             </Routes>
         </div>

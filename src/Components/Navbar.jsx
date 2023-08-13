@@ -51,7 +51,7 @@ function Navbar({ searchHandler }) {
           }}
         >
           <div className="pr-2 flex text-base">
-            <span className="pl-2 pr-5 hover:text-red-600">
+            <span className="flex pl-2 pr-5 hover:text-red-600 items-center">
               <a
                 href="http://localhost:3000/merchandise"
                 className="align-middle"
@@ -59,7 +59,7 @@ function Navbar({ searchHandler }) {
                 MERCHANDISE
               </a>
             </span>
-            <span className="pl-2 pr-2 hover:text-red-600">
+            <span className="flex w-[120px] pl-2 pr-2 hover:text-red-600">
               <a href="http://localhost:3000/aboutus" className="align-middle">
                 ABOUT US
               </a>
