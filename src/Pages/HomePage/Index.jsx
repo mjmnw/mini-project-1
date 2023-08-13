@@ -23,7 +23,7 @@ function Home() {
     try {
       const res = await axios.get("http://localhost:5000/event", {
         params: {
-          category: selectedCategory,
+          ticket_category: selectedCategory,
         },
       });
       setProducts(res.data);
@@ -31,11 +31,10 @@ function Home() {
       console.log(error);
     }
   };
-  console.log(products);
 
   const fetchCategories = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/categories");
+      const res = await axios.get("http://localhost:5000/ticketCategories");
       setCategories(res.data);
     } catch (error) {
       console.log(error);
@@ -75,14 +74,14 @@ function Home() {
             All
           </a>
           {categories.length > 0 &&
-            categories.map((category) => {
+            categories.map((ticket_category) => {
               return (
                 <a
-                  key={category.id}
-                  onClick={() => setSelectedCategory(category.category_name)}
+                  key={ticket_category.id}
+                  onClick={() => setSelectedCategory(ticket_category.ticket_category)}
                   style={{ cursor: "pointer" }}
                 >
-                  {category.category_name}
+                  {ticket_category.ticket_category}
                 </a>
               );
             })}

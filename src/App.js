@@ -5,6 +5,7 @@ import Home from "./Pages/HomePage/Index";
 import Merchandise from "./Pages/MerchandisePage/Index";
 import MyAccount from "./Pages/MyAccountPage/Index";
 import TransactionDetail from "./Pages/TransactionPage/Index";
+import MerchandiseTransactionDetail from "./Pages/MerchandiseTransactionPage/Index";
 import TnC from "./Pages/TermsAndConditionsPage/Index";
 import AboutUsPage from "./Pages/AboutUsPage/Index";
 import MyTicket from "./Pages/MyTicketPage/Index";
@@ -35,6 +36,7 @@ function App() {
             <Route path="/myaccount" element={<MyAccount />} />
             <Route path="/transaction" element={<TransactionDetail />} />
             <Route path="/transaction-confirmation/:productId" element={<TransactionDetail />} />
+            <Route path="/merchandise-confirmation/:productId" element={<MerchandiseTransactionDetail />} />
             <Route path="/termsandconditions" element={<TnC />} />
             <Route path="/aboutus" element={<AboutUsPage />} />
             <Route path="/myticket" element={<MyTicket />} />
