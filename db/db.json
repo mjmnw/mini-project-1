@@ -35,6 +35,18 @@
       "points": 0,
       "balance": 999999,
       "password": "Arya1234"
+    },
+    {
+      "full_name": "Arya Bintang",
+      "email": "arya@gmail.com",
+      "phone_number": "081212345677",
+      "password": "arya1234",
+      "refferal_code": "EYTpy0IuOb",
+      "user_uniqueid": "kUGJI",
+      "points": 0,
+      "balance": 0,
+      "user_type": "user",
+      "id": 4
     }
   ],
   "event": [
@@ -165,7 +177,7 @@
       "ticket_date": "22-March 2024",
       "ticket_location": "Rio de Janeiro, Brazil",
       "ticket_category": "Pop",
-      "ticket_stock":2000,
+      "ticket_stock": 2000,
       "ticket_price": 1200000
     },
     {
