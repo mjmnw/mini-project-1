@@ -48,8 +48,8 @@
       "ticket_date": "07-07-2024",
       "ticket_location": "Serengeti National Park, Tanzania",
       "ticket_category": "Rock",
-      "ticket_stock": 4968,
-      "ticket_price": 20000
+      "ticket_stock": 5000,
+      "ticket_price": 1500000
     },
     {
       "id": 2,
@@ -61,8 +61,8 @@
       "ticket_date": "10-10-2024",
       "ticket_location": "Santorini, Greece",
       "ticket_category": "Rock",
-      "ticket_stock": 5000,
-      "ticket_price": 50000
+      "ticket_stock": 2500,
+      "ticket_price": 800000
     },
     {
       "id": 3,
@@ -74,8 +74,8 @@
       "ticket_date": "22-March 2023",
       "ticket_location": "Angkor Wat, Cambodia",
       "ticket_category": "Rock",
-      "ticket_stock": 5000,
-      "ticket_price": 50000
+      "ticket_stock": 3000,
+      "ticket_price": 1000000
     },
     {
       "id": 4,
@@ -87,8 +87,8 @@
       "ticket_date": "22-March 2024",
       "ticket_location": "Machu Picchu, Peru",
       "ticket_category": "Rock",
-      "ticket_stock": 5000,
-      "ticket_price": 50000
+      "ticket_stock": 3000,
+      "ticket_price": 850000
     },
     {
       "id": 5,
@@ -100,8 +100,8 @@
       "ticket_date": "22-March 2024",
       "ticket_location": "Sydney Opera House, Australia",
       "ticket_category": "Pop",
-      "ticket_stock": 5000,
-      "ticket_price": 50000
+      "ticket_stock": 2000,
+      "ticket_price": 800000
     },
     {
       "id": 6,
@@ -113,8 +113,8 @@
       "ticket_date": "22-March 2024",
       "ticket_location": "Petra, Jordan",
       "ticket_category": "Rock",
-      "ticket_stock": 5000,
-      "ticket_price": 50000
+      "ticket_stock": 7000,
+      "ticket_price": 1500000
     },
     {
       "id": 7,
@@ -127,176 +127,176 @@
       "ticket_location": "Chichen Itza, Mexico",
       "ticket_category": "Rock",
       "ticket_stock": 5000,
-      "ticket_price": 50000
+      "ticket_price": 1000000
     },
     {
       "id": 8,
       "ticket_uniqueid": 8,
       "ticket_name": "Orbituary",
       "ticket_image": [
-        " "
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqRhErPMgQ3aTqXOsrq-Qc6dBu7ruW7luV3W7QudCNnx5hQs-YPuVYxaFHcJ8F1VtUg_w&usqp=CAU"
       ],
       "ticket_date": "22-March 2024",
       "ticket_location": "Reykjavik, Iceland",
       "ticket_category": "Pop",
-      "ticket_stock": 5000,
-      "ticket_price": 50000
+      "ticket_stock": 2700,
+      "ticket_price": 1200000
     },
     {
       "id": 9,
       "ticket_uniqueid": 9,
       "ticket_name": "Decide",
       "ticket_image": [
-        " "
+        "https://i.pinimg.com/550x/af/f9/99/aff9996f3547393c01a0b416afe3cee5.jpg"
       ],
       "ticket_date": "22-March 2024",
       "ticket_location": "The Great Wall of China, China",
       "ticket_category": "Pop",
-      "ticket_stock": 5000,
-      "ticket_price": 50000
+      "ticket_stock": 6500,
+      "ticket_price": 950000
     },
     {
       "id": 10,
       "ticket_uniqueid": 10,
       "ticket_name": "Carcass",
       "ticket_image": [
-        " "
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl2xigCAierbiTIlZa54AjvhVC0KPAl7eoBQ&usqp=CAU"
       ],
       "ticket_date": "22-March 2024",
       "ticket_location": "Rio de Janeiro, Brazil",
       "ticket_category": "Pop",
-      "ticket_stock": 5000,
-      "ticket_price": 50000
+      "ticket_stock":2000,
+      "ticket_price": 1200000
     },
     {
       "id": 11,
       "ticket_uniqueid": 11,
       "ticket_name": "Megadeth",
       "ticket_image": [
-        " "
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD8g67ChJtiXUOqskhCAKKe53vpRTowdeWFg&usqp=CAU"
       ],
       "ticket_date": "22-March 2024",
       "ticket_location": "Los Angeles, USA",
       "ticket_category": "Pop",
       "ticket_stock": 5000,
-      "ticket_price": 50000
+      "ticket_price": 1500000
     },
     {
       "id": 12,
       "ticket_uniqueid": 12,
       "ticket_name": "Slayer",
       "ticket_image": [
-        " "
+        "https://i0.wp.com/wallofsoundau.com/wp-content/uploads/2018/12/slayer-band.jpg?fit=2000%2C1125&ssl=1 "
       ],
       "ticket_date": "22-March 2024",
       "ticket_location": "Berlin, Germany",
       "ticket_category": "Pop",
-      "ticket_stock": 5000,
-      "ticket_price": 50000
+      "ticket_stock": 2000,
+      "ticket_price": 850000
     },
     {
       "id": 13,
       "ticket_uniqueid": 13,
       "ticket_name": "Iron Maiden",
       "ticket_image": [
-        " "
+        "https://static.republika.co.id/uploads/images/inpicture_slide/iron-maden-_161029064332-157.jpg"
       ],
       "ticket_date": "22-March 2024",
       "ticket_location": "London, UK",
       "ticket_category": "Pop",
-      "ticket_stock": 5000,
-      "ticket_price": 50000
+      "ticket_stock": 1500,
+      "ticket_price": 1000000
     },
     {
       "id": 14,
       "ticket_uniqueid": 14,
       "ticket_name": "Metallica",
       "ticket_image": [
-        " "
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRML3YmFCrqqUwPaM38y8Vj-pP-vc4_Zgwe3g&usqp=CAU "
       ],
       "ticket_date": "22-March 2024",
       "ticket_location": "San Fransisco, USA",
       "ticket_category": "Pop",
-      "ticket_stock": 5000,
-      "ticket_price": 50000
+      "ticket_stock": 10000,
+      "ticket_price": 2500000
     },
     {
       "id": 15,
       "ticket_uniqueid": 15,
       "ticket_name": "Black Sabbath",
       "ticket_image": [
-        " "
+        "https://i.scdn.co/image/5931700f9515dd6587230130beb615e0549e47dc "
       ],
       "ticket_date": "22-March 2024",
       "ticket_location": "Birmingham, UK",
       "ticket_category": "Pop",
-      "ticket_stock": 5000,
-      "ticket_price": 50000
+      "ticket_stock": 2500,
+      "ticket_price": 950000
     },
     {
       "id": 16,
       "ticket_uniqueid": 16,
       "ticket_name": "Pantera",
       "ticket_image": [
-        " "
+        "https://townsquare.media/site/366/files/2014/09/Pantera.jpg "
       ],
       "ticket_date": "22-March 2024",
       "ticket_location": "Dallas, USA",
       "ticket_category": "Pop",
-      "ticket_stock": 5000,
-      "ticket_price": 50000
+      "ticket_stock": 2500,
+      "ticket_price": 1200000
     },
     {
       "id": 17,
       "ticket_uniqueid": 17,
       "ticket_name": "Judas Priest",
       "ticket_image": [
-        "https://www.freepik.com/premium-vector/hard-rock-music-festival-poster_7777421.html"
+        "https://i8.amplience.net/i/naras/Judas%20Priest_GettyImages-111565579_Screaming%20tour%201983.jpg?w=821&sm=c"
       ],
       "ticket_date": "22-March 2024",
       "ticket_location": "London, UK",
       "ticket_category": "Pop",
-      "ticket_stock": 5000,
-      "ticket_price": 50000
+      "ticket_stock": 3500,
+      "ticket_price": 1500000
     },
     {
       "id": 18,
       "ticket_uniqueid": 18,
       "ticket_name": "Sepultura",
       "ticket_image": [
-        " "
+        " https://nun.sindonews.net/dyn/620/content/2019/08/11/157/1428895/kembali-ke-studio-sepultura-garap-album-ke-15-BuO-thumb.jpg"
       ],
       "ticket_date": "22-March 2024",
       "ticket_location": "São Paulo, Brazil",
       "ticket_category": "Pop",
-      "ticket_stock": 5000,
-      "ticket_price": 50000
+      "ticket_stock": 6000,
+      "ticket_price": 1000000
     },
     {
       "id": 19,
       "ticket_uniqueid": 19,
       "ticket_name": "Slipknot",
       "ticket_image": [
-        " "
+        "https://cdn06.pramborsfm.com/storage/app/media/Prambors/Editorial%202/Slipknot-20230309130825.webp?tr=w-800"
       ],
       "ticket_date": "22-March 2024",
       "ticket_location": "Des Moines, USA",
       "ticket_category": "Pop",
-      "ticket_stock": 5000,
-      "ticket_price": 50000
+      "ticket_stock": 8000,
+      "ticket_price": 1500000
     },
     {
       "id": 20,
       "ticket_uniqueid": 20,
       "ticket_name": "Anthrax",
       "ticket_image": [
-        " "
+        "https://www.udiscovermusic.com/wp-content/uploads/2020/02/Anthrax-GettyImages-85847260a.jpg "
       ],
       "ticket_date": "22-March 2024",
       "ticket_location": "New York, USA",
       "ticket_category": "R&B",
       "ticket_stock": 5000,
-      "ticket_price": 50000
+      "ticket_price": 1500000
     }
   ],
   "ticketCategories": [
@@ -331,35 +331,35 @@
     {
       "id": 1,
       "merchandise_uniqueid": 1,
-      "merchandise_name": "Botol A",
+      "merchandise_name": "Tumbler",
       "merchandise_image": [
-        ""
+        "https://thekingshirt.com/wp-content/uploads/2022/07/mortality-insulated-cups-till-death-do-us-part-tumbler-tumbler-cup-20oz-tumbler-cup-30oz-straight-tumbler-20oz.jpg"
       ],
-      "merchandise_stock": 29986,
+      "merchandise_stock": 15000,
       "merchandise_category": "Bottle",
-      "merchandise_price": 1
+      "merchandise_price": 250000
     },
     {
       "id": 2,
       "merchandise_uniqueid": 2,
-      "merchandise_name": "Botol B",
+      "merchandise_name": "T-Shirt",
       "merchandise_image": [
-        ""
+        "https://selfmadegod-store.com/eng_pl_CENOTAPH-Turkish-Death-Metal-T-SHIRT-8738_1.jpg"
       ],
-      "merchandise_stock": 30000,
+      "merchandise_stock": 10000,
       "merchandise_category": "T-Shirt",
-      "merchandise_price": 100
+      "merchandise_price": 500000
     },
     {
       "id": 3,
       "merchandise_uniqueid": 3,
-      "merchandise_name": "Botol C",
+      "merchandise_name": "Tote-Bag",
       "merchandise_image": [
-        ""
+        "https://render.fineartamerica.com/images/rendered/default/tote-bag/images/artworkimages/medium/3/metalcore-guitarist-heavy-metal-hard-rock-funk-band-gift-death-metal-music-thomas-larch-transparent.png?&targetx=99&targety=42&imagewidth=565&imageheight=678&modelwidth=763&modelheight=763&backgroundcolor=000000&orientation=0&producttype=totebag-18-18"
       ],
-      "merchandise_stock": 30000,
-      "merchandise_category": "Lanyard",
-      "merchandise_price": 1
+      "merchandise_stock": 15000,
+      "merchandise_category": "Tote-Bag",
+      "merchandise_price": 300000
     }
   ],
   "merchandiseCategory": [
@@ -373,7 +373,7 @@
     },
     {
       "id": 3,
-      "merchandise_category": "Lanyard"
+      "merchandise_category": "Tote-Bag"
     }
   ],
   "merchandisePurchaseHistory": [
@@ -400,17 +400,17 @@
     {
       "id": 1,
       "coupon_name": "disc5",
-      "discount_amount": 5000
+      "discount_amount": 50000
     },
     {
       "id": 2,
       "coupon_name": "disc10",
-      "discount_amount": 10000
+      "discount_amount": 100000
     },
     {
       "id": 3,
       "coupon_name": "disc15",
-      "discount_amount": 15000
+      "discount_amount": 200000
     }
   ]
 }
