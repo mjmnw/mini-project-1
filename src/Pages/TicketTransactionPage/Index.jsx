@@ -14,7 +14,6 @@ function TransactionDetail() {
   const [voucher, setVoucher] = useState("");
   const [voucherIsValid, setVoucherIsValid] = useState(null);
   const dispatch = useDispatch();
-  const navigate = useNavigate();
 
   const fetchProduct = async () => {
     try {

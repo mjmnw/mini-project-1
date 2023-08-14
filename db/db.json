@@ -9,7 +9,7 @@
       "phone_number": "081212345678",
       "refferal_code": "ABC123",
       "points": 10000000,
-      "balance": 9880000,
+      "balance": 6880000,
       "password": "Martin1231"
     },
     {
@@ -60,7 +60,7 @@
       "ticket_date": "07-07-2024",
       "ticket_location": "Serengeti National Park, Tanzania",
       "ticket_category": "Rock",
-      "ticket_stock": 5000,
+      "ticket_stock": 4997,
       "ticket_price": 1500000
     },
     {
@@ -337,54 +337,6 @@
       "user_uniqueid": 1,
       "ticket_uniqueid": 2,
       "ticket_purchase_amount": 2
-    },
-    {
-      "user_uniqueid": 1,
-      "ticket_uniqueid": 1,
-      "ticket_purchase_amount": 1,
-      "id": 3
-    },
-    {
-      "user_uniqueid": 1,
-      "ticket_uniqueid": 1,
-      "ticket_purchase_amount": 1,
-      "id": 4
-    },
-    {
-      "user_uniqueid": 1,
-      "ticket_uniqueid": 1,
-      "ticket_purchase_amount": 1,
-      "id": 5
-    },
-    {
-      "user_uniqueid": 1,
-      "ticket_uniqueid": 1,
-      "ticket_purchase_amount": 1,
-      "id": 6
-    },
-    {
-      "user_uniqueid": 1,
-      "ticket_uniqueid": 1,
-      "ticket_purchase_amount": 1,
-      "id": 7
-    },
-    {
-      "user_uniqueid": 1,
-      "ticket_uniqueid": 1,
-      "ticket_purchase_amount": 1,
-      "id": 8
-    },
-    {
-      "user_uniqueid": 1,
-      "ticket_uniqueid": 1,
-      "ticket_purchase_amount": 1,
-      "id": 9
-    },
-    {
-      "user_uniqueid": 1,
-      "ticket_uniqueid": 1,
-      "ticket_purchase_amount": 1,
-      "id": 10
     }
   ],
   "merchandiseType": [
@@ -397,7 +349,7 @@
       ],
       "merchandise_stock": 15000,
       "merchandise_category": "Bottle",
-      "merchandise_price": 250000
+      "merchandise_price": 10
     },
     {
       "id": 2,
@@ -408,7 +360,7 @@
       ],
       "merchandise_stock": 10000,
       "merchandise_category": "T-Shirt",
-      "merchandise_price": 500000
+      "merchandise_price": 5
     },
     {
       "id": 3,
@@ -419,7 +371,7 @@
       ],
       "merchandise_stock": 15000,
       "merchandise_category": "Tote-Bag",
-      "merchandise_price": 300000
+      "merchandise_price": 3
     }
   ],
   "merchandiseCategory": [
