@@ -8,16 +8,6 @@ export default function Mypage () {
                     Account Information
                 </a>
             </li>
-            <li>
-                <a  className="flex mb-2 hover:text-red-600 pt-10" href="http://localhost:3000/transactionhistory">
-                    Ticket Transaction
-                </a>
-            </li>
-            <li>
-                <a  className="flex mb-2 hover:text-red-600 pt-10" href="http://localhost:3000/transactionhistory">
-                    Merchandise Transaction
-                </a>
-            </li>
         </ul>
         <ul className="flex flex-row mt-1 px-11 mb-24 justify-end gap-10">
             <li>

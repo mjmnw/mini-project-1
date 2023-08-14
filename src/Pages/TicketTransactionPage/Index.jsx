@@ -92,13 +92,13 @@ function TransactionDetail() {
           )}
           <h1 className="text-white">Your balance: {userSelector.balance}</h1>
           <button
-            className="text-3xl text-red-100 border border-solid rounded-lg border-2 mb-40 mt-5"
+            className="text-s text-red-100 border border-solid rounded-lg border-2 mt-5"
             onClick={voucherChecker}
           >
             Voucher Check
           </button>
           <button
-            className="text-3xl text-red-100 border border-solid rounded-lg border-2 mb-40 mt-5"
+            className="flex text-3xl text-red-100 border border-solid rounded-lg border-2 mb-40 mt-5 px-8 py-2"
             onClick={buyTicketHandler}
           >
             Buy Now

@@ -8,8 +8,8 @@
       "email": "martin@gmail.com",
       "phone_number": "081212345678",
       "refferal_code": "ABC123",
-      "points": 5000,
-      "balance": 999999,
+      "points": 10000000,
+      "balance": 10000000,
       "password": "Martin1231"
     },
     {
@@ -20,8 +20,8 @@
       "email": "syahrin@gmail.com",
       "phone_number": "081212345679",
       "refferal_code": "BCA321",
-      "points": 0,
-      "balance": 999999,
+      "points": 10000000,
+      "balance": 10000000,
       "password": "Syahrin123"
     },
     {
@@ -32,8 +32,8 @@
       "email": "arya@gmail.com",
       "phone_number": "081212345677",
       "refferal_code": "CAB213",
-      "points": 0,
-      "balance": 999999,
+      "points": 10000000,
+      "balance": 10000000,
       "password": "Arya1234"
     },
     {

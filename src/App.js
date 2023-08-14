@@ -14,8 +14,6 @@ import KeepLogin from "./AppWrapper/KeepLogin";
 import Register from "./Pages/RegisterPage/Index";
 import { store } from "./Redux/Store";
 import Login from "./Pages/LoginPage/Index";
-// import TransactionHistory from "./Pages/TransactionHistory/Index";
-
 
 // import axios from 'axios';
 // import toast from 'react-hot-toast';
@@ -40,7 +38,6 @@ function App() {
             <Route path="/aboutus" element={<AboutUsPage />} />
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />
-            {/* <Route path="/transactionhistory" element={<TransactionHistory />} /> */}
             <Route path="/*" element={<NotFound />} />
             </Routes>
         </div>
