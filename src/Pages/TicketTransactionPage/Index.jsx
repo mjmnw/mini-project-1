@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import ProductCard from "../../Components/Productcard";
 import { useDispatch, useSelector } from "react-redux";
@@ -14,6 +14,7 @@ function TransactionDetail() {
   const [voucher, setVoucher] = useState("");
   const [voucherIsValid, setVoucherIsValid] = useState(null);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const fetchProduct = async () => {
     try {
@@ -26,27 +27,27 @@ function TransactionDetail() {
 
   const buyTicketHandler = async () => {
     try {
-      if(userSelector.balance >= product.ticket_price) {
-      await axios.patch(`http://localhost:5000/event/${productId}`, {
-        ticket_stock: product.ticket_stock - 1,
-      });
-      await axios.post(`http://localhost:5000/ticketPurchaseHistory`, {
-        user_uniqueid: userSelector.id,
-        ticket_uniqueid: product.id,
-        ticket_purchase_amount: 1,
-      });
-      const res = await axios.patch(
-        `http://localhost:5000/user/${userSelector.id}`,
-        {
-          balance: voucherIsValid
-            ? userSelector.balance -
-              product.ticket_price +
-              voucherIsValid.discount_amount
-            : userSelector.balance - product.ticket_price,
-        }
-      );
-      dispatch(login(res.data));
-      fetchProduct();
+      if (userSelector.balance >= product.ticket_price) {
+        await axios.patch(`http://localhost:5000/event/${productId}`, {
+          ticket_stock: product.ticket_stock - 1,
+        });
+        await axios.post(`http://localhost:5000/ticketPurchaseHistory`, {
+          user_uniqueid: userSelector.id,
+          ticket_uniqueid: product.id,
+          ticket_purchase_amount: 1,
+        });
+        const res = await axios.patch(
+          `http://localhost:5000/user/${userSelector.id}`,
+          {
+            balance: voucherIsValid
+              ? userSelector.balance -
+                product.ticket_price +
+                voucherIsValid.discount_amount
+              : userSelector.balance - product.ticket_price,
+          }
+        );
+        dispatch(login(res.data));
+        fetchProduct();
       }
     } catch (error) {
       console.log(error);

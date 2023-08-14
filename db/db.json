@@ -9,7 +9,7 @@
       "phone_number": "081212345678",
       "refferal_code": "ABC123",
       "points": 10000000,
-      "balance": 10000000,
+      "balance": 9880000,
       "password": "Martin1231"
     },
     {
@@ -48,7 +48,7 @@
       "ticket_date": "07-07-2024",
       "ticket_location": "Serengeti National Park, Tanzania",
       "ticket_category": "Rock",
-      "ticket_stock": 5000,
+      "ticket_stock": 4984,
       "ticket_price": 20000
     },
     {
@@ -325,6 +325,54 @@
       "user_uniqueid": 1,
       "ticket_uniqueid": 2,
       "ticket_purchase_amount": 2
+    },
+    {
+      "user_uniqueid": 1,
+      "ticket_uniqueid": 1,
+      "ticket_purchase_amount": 1,
+      "id": 3
+    },
+    {
+      "user_uniqueid": 1,
+      "ticket_uniqueid": 1,
+      "ticket_purchase_amount": 1,
+      "id": 4
+    },
+    {
+      "user_uniqueid": 1,
+      "ticket_uniqueid": 1,
+      "ticket_purchase_amount": 1,
+      "id": 5
+    },
+    {
+      "user_uniqueid": 1,
+      "ticket_uniqueid": 1,
+      "ticket_purchase_amount": 1,
+      "id": 6
+    },
+    {
+      "user_uniqueid": 1,
+      "ticket_uniqueid": 1,
+      "ticket_purchase_amount": 1,
+      "id": 7
+    },
+    {
+      "user_uniqueid": 1,
+      "ticket_uniqueid": 1,
+      "ticket_purchase_amount": 1,
+      "id": 8
+    },
+    {
+      "user_uniqueid": 1,
+      "ticket_uniqueid": 1,
+      "ticket_purchase_amount": 1,
+      "id": 9
+    },
+    {
+      "user_uniqueid": 1,
+      "ticket_uniqueid": 1,
+      "ticket_purchase_amount": 1,
+      "id": 10
     }
   ],
   "merchandiseType": [
